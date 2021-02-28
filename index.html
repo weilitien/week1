@@ -76,12 +76,12 @@
 }
 
 .image{
-  margin: 5px;
+  margin-top: 5px;
+  width: 25%;
 }
 
 
 .pic{
-  margin: 10px;
   width: 1200px;
   display: flex;
   align-items: center;
@@ -139,10 +139,13 @@ flex-direction: row;
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+
+.image{
+width: 45%;
+}
+
   .pic{
-  margin: 10px;
-  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -153,11 +156,12 @@ flex-direction: row;
 @media screen and (max-width: 600px){
   .pic{
   margin: 10px;
-  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  background-color: gray;
+  max-width: 90%;
   }
 
   .item{
@@ -169,7 +173,11 @@ flex-direction: row;
 }
 
 .top_right{
-display: flex;
+display: flex-end;
+}
+
+.image{
+  width: 100%;
 }
 
   
